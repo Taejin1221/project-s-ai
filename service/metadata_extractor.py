@@ -51,6 +51,9 @@ class MetadataExtractor:
                 data["tags"] = []
                 data["keywords"] = []
 
+            if len(data["tags"]) > 3:
+                data["tags"] = []
+
             if not data["tags"]:
                 data["tags"].append("기타")
 
